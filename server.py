@@ -49,7 +49,7 @@ class MyHandle (SimpleHTTPRequestHandler):
                 self.send_error(404, 'file not found')
         elif self.path == '/cadastro':
             try:
-                with open(os.path.join(os.getcwd(), 'cadastro.html'), 'r') as login:
+                with open(os.path.join(os.getcwd(), 'cadastrofilmes.html'), 'r') as login:
                     content = login.read()
 
                 self.send_response(200)
