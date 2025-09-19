@@ -4,22 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>login</title>
-    <link rel="stylesheet" href="style-login.css">
 </head>
 <body>
-    <div class="loginn">
+    <form class="loginn" action="/send_login" method="post">
         <h1>Login</h1>
-        <div class="e-mail">
-            <label for="email">Email: </label>
-            <input type="text" id="E-mail" placeholder="Digite seu e-mail aqui" required>
+        <div>
+            <label> Email: </label>
+            <input type="text" id="E-mail" name="email" placeholder="Digite seu e-mail aqui" required>
         </div>
-        <div class="senha">
-            <label for="senhas">Senha: </label>
-            <input type="text" id="senha1" placeholder="Digite sua senha aqui" required>
+        <div>
+            <label> Senha: </label>
+            <input type="text" id="senha1"  name="senha" placeholder="Digite sua senha aqui" required>
         </div>
-        <button type="submit" class="login">
-            <a href="index.html">Entrar</a>
-        </button>
-    </div>
+        <button type="submit">Entrar</button> 
+    </form>
 </body>
 </html>

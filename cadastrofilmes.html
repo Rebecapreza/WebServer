@@ -4,42 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de filmes</title>
-    <link rel="stylesheet" href="style-cadastro.css">
 </head>
 <body>
-    <form id="filmes">
+    <form id="filmes" action="/send_cadastrofilmes" method="post">
         <h1>Cadastro dos filmes</h1>
         <div class="nome">
-            <label for="nome">Nome do filme: </label>
-            <input type="text" id="primeiro-nome" placeholder="Digite o nome do filme" required>
+            <label>Nome do filme: </label>
+            <input type="text" placeholder="Digite o nome do filme" required>
         </div>
         <div class="atores">
-            <label for="ator">Atores: </label>
-            <input type="text" id="segundo-nome" placeholder="Digite os atores aqui" required>
+            <label>Atores: </label>
+            <input type="text" placeholder="Digite os atores aqui" required>
         </div>
         <div class="diretores">
-            <label for="diretor">Diretor: </label>
-            <input type="text" id="E-mail" placeholder="Digite o diretor aqui" required>
+            <label>Diretor: </label>
+            <input type="text"  placeholder="Digite o diretor aqui" required>
         </div>
-        <div class="anos">
-            <label for="ano">Ano: </label>
-            <input type="text" id="senha1" placeholder="Digite o ano aqui" required>
+        <div class="ano">
+            <label>Ano: </label>
+            <input type="text" placeholder="Digite o ano aqui" required>
         </div>
         <div class="genero">
-            <label for="confirmar-senha">Gênero: </label>
-            <input type="text" id="senha2" placeholder="Digite o gênero aqui" required>
+            <label >Gênero: </label>
+            <input type="text" placeholder="Digite o gênero aqui" required>
         </div>
-        <div class="senha">
-            <label for="confirmar-senha">Produtora: </label>
-            <input type="text" id="senha2" placeholder="Digite a produtora aqui" required>
+        <div class="produtora">
+            <label>Produtora: </label>
+            <input type="text" placeholder="Digite a produtora aqui" required>
         </div>
-        <div class="senha">
-            <label for="confirmar-senha">Sinopse: </label>
-            <input type="text" id="senha2" placeholder="Digite a sinopse aqui" required>
+        <div class="sinopse">
+            <label>Sinopse: </label>
+            <input type="text" placeholder="Digite a sinopse aqui" required>
         </div>
-        <button type="submit" class="botão" >
-            <a href="index.html"> Cadastrar filme </a>
-        </button>
+        <button type="submit"> Cadastrar filme </button>
     </form>
 </body>
 </html>
