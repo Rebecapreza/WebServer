@@ -1,15 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>teste</title>
+    <title>Home page</title>
 </head>
+
 <body>
-    <h1>.・。.・゜♡・ꨄ・♡・゜・。. Bem vindo(a) a aula de Backend .・。.・゜♡・ꨄ・♡・゜・。.</h1>
-    <h2>ir para:</h2>
-    <button> <a href="cadastrofilmes.html"> Cadastro de filmes </a> </button>
-    <button> <a href="filmes.html"> Filmes já cadastrados</a></button>
-    <button> <a href="login.html"> Login </a></button>
+    <section class="container">
+        <section class="header">
+            <h1 class="title">🎬 Bem vindo(a) a aula de Backend</h1>
+            <p class="subtitle">Sistema de gerenciamento de filmes</p>
+        </section>
+
+        <section class="content">
+            <section class="welcome-section">
+                <p class="welcome-text">
+                    Organize sua coleção de filmes de forma simples e elegante.
+                    Cadastre, visualize e gerencie todos os seus filmes favoritos em um só lugar!
+                </p>
+            </section>
+
+            <section class="navigation-cards">
+                <a href="cadastro.html" class="nav-card">
+                    <section class="nav-card-icon">➕</section>
+                    <h3 class="nav-card-title">Cadastro de filmes</h3>
+                    <p class="nav-card-description">
+                        Adicione novos filmes à sua coleção com informações completas como nome, atores, diretor, ano e
+                        sinopse.
+                    </p>
+                </a>
+
+                <a href="filmes.html" class="nav-card">
+                    <section class="nav-card-icon">📋</section>
+                    <h3 class="nav-card-title">Filmes já cadastrados</h3>
+                    <p class="nav-card-description">
+                        Visualize todos os filmes da sua coleção em uma tabela organizada e fácil de navegar.
+                    </p>
+                </a>
+
+                <a href="login.html" class="nav-card">
+                    <section class="nav-card-icon">🔐</section>
+                    <h3 class="nav-card-title">Login</h3>
+                    <p class="nav-card-description">
+                        Acesse sua conta para gerenciar sua coleção pessoal de filmes com segurança.
+                    </p>
+                </a>
+            </section>
+
+
+
+            <section class="login-section">
+                <h3 style="color: #e91e63; margin-bottom: 10px;">Pronto para começar?</h3>
+                <p style="color: #666; margin-bottom: 0;">Entre na sua conta ou cadastre novos filmes agora mesmo!</p>
+                <a href="login.html" class="login-btn">Fazer Login</a>
+            </section>
+        </section>
+    </section>
 </body>
+
 </html>

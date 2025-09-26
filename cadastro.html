@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <section class="container">
+        <section class="header">
+            <h1>Cadastro de Filmes</h1>
+        </section>
+
+        
+        <section class="form-container">
+            <form action="/send_cadastro" method="POST">
+                <section class="form-group">
+                    <label for="nome">Nome do Filme</label>
+                    <input type="text" id="nome" name="nome" required />
+
+                    <label for="atores">Atores</label>
+                    <input type="text" id="atores" name="atores" />
+
+                    <label for="diretores">Diretores</label>
+                    <input type="text" id="diretores" name="diretores" />
+
+                    <label for="ano">Ano de Lançamento</label>
+                    <input type="text" id="ano" name="ano" />
+
+                    <label for="genero">Gênero</label>
+                    <input type="text" id="genero" name="genero" />
+
+                    <label for="produtora">Produtora</label>
+                    <input type="text" id="produtora" name="produtora" />
+
+                    <label for="sinopse">Sinopse</label>
+                    <textarea id="sinopse" name="sinopse"
+                        placeholder="Descreva brevemente o enredo do filme..."></textarea>
+                </section>
+
+                <button type="submit" class="submit-btn">Cadastrar Filme</button>
+            </form>
+        </section>
+    </section>
+</body>
+
+</html>
